@@ -2,6 +2,21 @@
 
 Physics Overviews 
 
+## GR mindmaps
+
+  <ul>
+    <li> Null radial geodesics and Penrose-Cardter diagrams:
+      <a href="https://github.com/overviews/null-radial-geodesics/raw/master/Null%20Radial%20Geodesics%20Catalogue.pdf">(pdf)</a> 
+      <a href="https://github.com/overviews/null-radial-geodesics">(git)</a>
+    </li>
+    <li> Tangent spaces:
+      <a href="https://github.com/overviews/tangent-spaces/raw/master/AGR-tangent-spaces-overview.pdf">(pdf)</a> 
+      <a href="https://github.com/overviews/tangent-spaces">(git)</a>
+    </li>
+  </ul>
+
+## QFT mindmaps
+
   <ul>
     <li> The Schrödinger, Heisenberg and Interaction Pictures in QFT:
       <a href="https://github.com/overviews/QFT-pictures/raw/master/QFT-pictures-overview.pdf">(pdf)</a> 
