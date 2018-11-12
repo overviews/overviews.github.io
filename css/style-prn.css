@@ -1,0 +1,51 @@
+#site-header, #colophon, #content-sidebar, #masthead { 
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+table,
+th,
+td {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	font-weight: bold;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+    padding: 3px 10px 3px 10px;
+}
+
+.prn-hidden {
+    display: none;
+}
