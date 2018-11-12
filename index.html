@@ -1,10 +1,201 @@
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/WebPage" xmlns:og="http://ogp.me/ns#">
 <head>
-<title>A3-overviews of Physics</title>
+    <title>A3-overviews of Physics</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel='canonical' href='http://qft.nu/ht18/' />
+    <link rel='shortlink' href='http://qft.nu/ht18/' />
+    <link rel="profile"   href="http://gmpg.org/xfn/11">
+    
+    <script type='text/javascript' src='js/jquery/jquery.js?ver=1.11.0'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+	<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+
+    <link rel='stylesheet' id='genericons-css'  href='genericons/genericons.css?ver=3.0.2' type='text/css' media='all' />
+    
+    <link rel='stylesheet' id='my-style-css'  href='css/style.css' type='text/css' media='all' />
+
+    <!-- Local style overrides -->
+    <style type="text/css" id="custom-background-css">
+
+
+        /** disable border for the status messages **/
+        .site-content .format-status .entry-content:after { display: none; } 
+		
+        tbody .tr-lect {
+            display: none;
+        }
+        .tr-sched, .tr-sched tr, .tr-sched td {
+            border: 0;
+        }
+		.tr-tutorial { 
+            color: black;
+            /*background-color: #fafafa;*/
+        }
+		.tr-tut-blue {
+			color: black;
+			/*background-color: #fafafa;*/
+		}
+		.tr-week td {
+			/*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+			border-top: 2px solid black;
+		}
+        .tr-wday {
+            color: black;
+        }
+        .tr-gray {
+            color: #E99;
+        }
+        .tr-bold {
+            color: #22a;
+        }
+        .tr-bold2 {
+            color: #00F;
+        }
+        .tr-norm {
+            color: #000;
+        }
+        .tr-mark {
+            color: blue;
+        }
+		tr .tr-cont1 {
+			border-top: 1px solid gray;
+			border-left: 2px solid gray;
+			border-bottom: 1px solid #EEE;
+            color: #00A;
+		}
+		tr .tr-cont2 {
+			border-top: 1px solid gray;
+			border-right: 1px solid #EEE;
+			border-bottom: 1px solid #EEE;
+			background: linear-gradient(white, #fafafa);
+		}
+    </style>
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="FK8027 HT18/VT19 Tutorials" />
+    <meta itemprop="description" content="The notes for the QFT tutorial sessions." />
+    <meta itemprop="image" content="http://qft.nu/ht18/images/thumbnail.jpg" />
+    <!-- /Schema.org markup for Google+ -->
+
+    <!-- Open Graph Meta Data -->
+    <meta property="og:site_name" content="FK8027-HT18" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FK8027 HT18/VT19 Tutorials" />
+    <meta property="og:description" content="The notes for the QFT tutorial sessions." />
+    <meta property="og:url" content="http://qft.nu/ht18/" />
+    <meta property="og:image" content="http://qft.nu/ht18/images/thumbnail.jpg" />
+    <!-- /Open Graph Meta Data -->
+	
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+        jQuery( function($) {
+			$(document).ready( function () { 
+				$("#cssnav a").click( function () { 
+					$("#my-style-css").attr( "href", $(this).attr('rel') );
+                    if ( $(this).attr('rel') == "css/style-prn.css" ) {
+                        $(this).text( 'switch to fancy view' );
+                        $("#cssnav-ref").attr( 'rel', "css/style.css" );
+                    }
+                    else {
+                        $(this).text( 'switch to printer-friendly view' );
+                        $("#cssnav-ref").attr( 'rel', "css/style-prn.css" );
+                    }
+					return false;
+				} );
+			} );
+            // $(window).unload( function() {
+            //     $.ajax({ url: '?unload', async : false });
+            // });
+        } );
+    /* ]]> */
+    </script>
+	
 </head>
-<body>
-QFT overviews:
-<div>
+
+<!--body class="home page page-id-1 page-template-default custom-background header-image grid"-->
+<body class="blog no-customize-support custom-background header-image list-view">
+
+<!-- BEGIN OF SITE PAGE - - - - - - - - - - - - - - - - - - - - - - - - - - -->    
+<div id="page" class="hfeed site">
+
+    <!-- HEADER IMAGE - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div id="site-header">
+        <img src="images/header-w1260.jpg" width="1260" height="236" alt="">
+        <div class="mbk-cfg-quote">
+           <strong>A3 overviews of Physics</strong>
+        </div>
+    </div>
+    
+    <!-- SITE HEADER - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <header id="masthead" class="site-header" role="banner">
+        <div class="header-main" style="display:none;">
+            <h1 class="site-title">
+<a href='.' rel='home'>A3 Overviews</a>            
+            </h1>
+            <!-- PRIMARY MENU - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                <h1 class="menu-toggle">Primary Menu</h1>
+                <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+                <div class="menu-top-green-container">
+                    <ul id="menu-top-green" class="nav-menu">
+                    <li id="menu-item-1500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1500">
+                        <a target="_blank" href="http://staff.fysik.su.se/~fawad/QFT/">[ Course Web ]</a>
+                    </li>
+                    <li id="menu-item-1502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1502">
+                        <a target="_blank" href="https://ssl.fysik.su.se/studentportal/kursinformation/schema/kursschema.php?kurs=FK8027">[ Schedule ]</a>
+                    </li>
+                    <li id="menu-item-1504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1504">
+                        <a>[ Books ]</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-1507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1507">
+                                <a target="_blank" href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0471496839,subjectCd-PH21.html">Mandl &amp; Shaw</a>
+                            </li>
+                            <li id="menu-item-1506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1506">
+                                <a target="_blank" href="http://books.google.se/books/about/An_Introduction_to_Quantum_Field_Theory.html?id=i35LALN0GosC&amp;redir_esc=y">Peskin &amp; Schroeder</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-1599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599">
+                        <a target="_blank" href="https://www.fysik.su.se/utbildning/program-kurser/kursinformation/kursfakta-och-scheman?kurs=FK8027">[ Course Info ]</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main" class="site-main">
+    <div id="main-content" class="main-content">
+    <div id="primary" class="content-area">
+    <div id="content" class="site-content" role="main">
+
+
+<!-- BEGIN OF ARTICLE - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<article id="post-info-1" class="post type-post status-publish"> <!-- format-quote hentry category-quotes"-->
+<!--div class="entry-content">
+    <p style="font-family:ariel,helvetica;">
+        <span style="font-weight:bold;font-size:110%">
+           This site contains the notes for the QFT tutorial sessions
+        </span>
+    </p>
+</div--><!-- .entry-content -->
+</article>
+
+<!-- BEGIN OF ARTICLE - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<article id="post-h-sched1" class="post type-post status-publish format-status hentry category-status">
+<div class="entry-content">
+    <h1>QFT mindmaps</h1>
+</div><!-- .entry-content -->
+</article>
+
+<!-- BEGIN OF ARTICLE - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<article id="post-b-sched1" class="post type-post status-publish">
+<div class="entry-content">
 	<ul>
 	<li> <a href="https://github.com/ovrvus/QFT-pictures-overview/raw/master/QFT-pictures-overview.pdf">The Schrödinger, Heisenberg and Interaction Pictures in QFT</a> </li>
 	<li> <a href="https://github.com/ovrvus/QFT-fields-overview/raw/master/QFT-fields-overview.pdf">Overview of the fields in QFT</a> &nbsp;
@@ -15,5 +206,48 @@ QFT overviews:
 	<li> <a href="https://github.com/ovrvus/QFT-commutation-relations/raw/master/QFT-commutation-relations.pdf">Invariant commutation and propagation functions</a> </li>
 	<li> <a href=https://github.com/ovrvus/QFT-path-integrals/raw/master/QFT-path-integrals.pdf">Path Integrals: Perturbation expansion for the phi^4-theory</a> </li>
 	</ul>
-</div>
+</div><!-- .entry-content -->
+</article>
+
+<!-- ================================================================== -->
+    
+    <!-- END OF CONTENT - - - - - - - - - - - - - - - - - - - - - - - - -->
+    </div><!-- #content -->
+    </div><!-- #primary -->
+
+    <!-- CONTENT SIDEBAR -->
+    <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+
+	<aside id="text-changelog" class="widget widget_text">
+		<h1 class="widget-title">Changelog</h1>
+		<p>
+		Last update: 2018-11-12 16:40<br />
+		<!--span style="color:blue;font-weight:bold;">Next update: 2018-08-20</span><br /-->
+		</p>
+	</aside>
+
+    <!-- Shortcuts -->
+    <aside id="text-menu" class="widget widget_text">
+        <h1 class="widget-title">Site Map</h1>
+        &emsp;&bullet; <a href=".">                 Main page            </a><br />
+    </aside>
+    
+    </div><!-- #content-sidebar -->
+    
+    </div><!-- #main-content -->
+    </div><!-- #main -->
+
+    <!-- FOOTER  -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+            A3 overviews of physics &nbsp; /// &nbsp; Webmaster: Mikica Kocic
+        </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+
+<!-- END OF SITE PAGE - - - - - - - - - - - - - - - - - - - - - - - - - - -->    
+</div><!-- #page -->
+<script type='text/javascript' src='js/functions.js?ver=20140319'></script>
+
 </body>
+</html>
+
